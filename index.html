@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>CryptoCurrency Monitor</title>
+</head>
+<body>
+
+    <header id="main">
+        <div class="wrapper">
+            <h1>Top 100 Crypto !</h1>
+            <form role="search" method="get" class="search-form form" action="">
+                <label>
+                    <span class="screen-reader-text">Search for...</span>
+                    <input type="search" id="query" class="search-field" placeholder="Type CryptoCurrency..." value="" name="s" title="" />
+                </label>
+            </form>
+           
+
+        </div>
+         <div class="cryptoStat">
+                <div class="card-info mCap">
+                   <p>MarketCap:</p> 
+                </div>
+                <div class="card-info volume">
+                    Volume:
+                </div>
+                <div class="card-info coins">
+                    All Coins:
+                </div>
+            </div>
+           
+        <div id="root">
+
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="globalAPI.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
